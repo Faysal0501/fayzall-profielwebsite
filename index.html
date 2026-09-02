@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio van Fayzall Zinhagel, aankomend software developer.">
+    <title>Faysal Zinhagel | Software Developer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- De navigatie verwijst naar onderdelen lager op dezelfde pagina. -->
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Naar het begin">FZ<span>.</span></a>
+      <nav aria-label="Hoofdnavigatie">
+        <a href="#over-mij">Over mij</a>
+        <a href="#vaardigheden">Vaardigheden</a>
+        <a href="#rekenmachine">Rekenmachine</a>
+        <a href="#mbo-verklaring">Mbo-verklaring</a>
+        <a href="#ervaring">Achtergrond</a>
+      </nav>
+      <a class="header-cta" href="#contact">Contact ↗</a>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> ICT-examens behaald · beschikbaar voor een stage</p>
+          <h1>Hoi, ik ben <em>Fayzall.</em><br>Software developer.</h1>
+          <p class="hero-intro">
+            Ik ben rustig, klantgericht en pak problemen graag stap voor stap aan.
+            Nu wil ik mijn kennis verder ontwikkelen in een professioneel developmentteam.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#vaardigheden">Bekijk mijn vaardigheden ↓</a>
+            <a class="text-link" href="#over-mij">Meer over mij</a>
+          </div>
+        </div>
+
+        <div class="code-card" aria-label="Voorbeeld van programmeercode">
+          <div class="code-topbar"><div><span></span><span></span><span></span></div><p>fayzall.js</p></div>
+          <pre><code><span class="code-purple">const</span> developer = {
+  naam: <span class="code-green">"Faysal"</span>,
+  focus: <span class="code-green">"Web development"</span>,
+  skills: [<span class="code-green">"HTML"</span>, <span class="code-green">"CSS"</span>,
+    <span class="code-green">"JavaScript"</span>, <span class="code-green">"PHP"</span>],
+  examensBehaald: <span class="code-blue">true</span>,
+  leergierig: <span class="code-blue">true</span>
+};</code></pre>
+          <div class="code-footer"><span>●</span> Klaar om te leren en mee te bouwen</div>
+        </div>
+      </section>
+
+      <section class="section about" id="over-mij">
+        <div class="section-label">01 — Over mij</div>
+        <div class="about-content">
+          <h2>Nieuwsgierig, praktisch en gericht op resultaat.</h2>
+          <div class="about-text">
+            <p>Ik heb mijn ICT-examens voor de mbo-opleiding Software Developer behaald. Tijdens de opleiding werkte ik aan websites, dashboards en databases. Ik vind het leuk om uit te zoeken waarom iets niet werkt en door te gaan totdat ik een oplossing heb.</p>
+            <p>Ik zoek een stageplek waar ik mijn kennis weer kan opfrissen, kan leren van ervaren developers en kan meewerken aan echte opdrachten. Bij Essent heb ik geleerd om goed te luisteren, duidelijk uit te leggen en zelfstandig verantwoordelijkheid te nemen.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="vaardigheden">
+        <div class="section-heading-row">
+          <div><div class="section-label">02 — Vaardigheden</div><h2>Technieken waarmee ik heb gewerkt</h2></div>
+          <p>Van de opbouw van een pagina tot de database erachter.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card"><strong>01</strong><h3>Front-end</h3><p>HTML, CSS, JavaScript</p></article>
+          <article class="skill-card"><strong>02</strong><h3>Back-end</h3><p>PHP, Python</p></article>
+          <article class="skill-card"><strong>03</strong><h3>Databases</h3><p>MySQL, PostgreSQL</p></article>
+          <article class="skill-card"><strong>04</strong><h3>Tools</h3><p>Git, Docker, VS Code</p></article>
+        </div>
+      </section>
+
+      <section class="section calculator-section" id="rekenmachine">
+        <div class="calculator-copy">
+          <div class="section-label light">03 — Kleine applicatie</div>
+          <h2>Rekenmachine</h2>
+          <p>
+            Deze rekenmachine is gemaakt met HTML, CSS en JavaScript. De knoppen
+            komen uit de HTML, CSS bepaalt het ontwerp en JavaScript voert de
+            berekeningen uit.
+          </p>
+          <p class="calculator-tip">Probeer bijvoorbeeld: 25 × 4 =</p>
+        </div>
+
+        <div class="calculator" aria-label="Rekenmachine">
+          <div class="calculator-screen" aria-live="polite">
+            <span id="berekening">&nbsp;</span>
+            <output id="uitkomst">0</output>
+          </div>
+          <div class="calculator-buttons">
+            <button class="function" data-action="clear" type="button">AC</button>
+            <button class="function" data-action="backspace" type="button" aria-label="Laatste cijfer verwijderen">⌫</button>
+            <button class="function" data-action="percent" type="button">%</button>
+            <button class="operator" data-operator="/" type="button">÷</button>
+            <button data-number="7" type="button">7</button>
+            <button data-number="8" type="button">8</button>
+            <button data-number="9" type="button">9</button>
+            <button class="operator" data-operator="*" type="button">×</button>
+            <button data-number="4" type="button">4</button>
+            <button data-number="5" type="button">5</button>
+            <button data-number="6" type="button">6</button>
+            <button class="operator" data-operator="-" type="button">−</button>
+            <button data-number="1" type="button">1</button>
+            <button data-number="2" type="button">2</button>
+            <button data-number="3" type="button">3</button>
+            <button class="operator" data-operator="+" type="button">+</button>
+            <button class="zero" data-number="0" type="button">0</button>
+            <button data-action="decimal" type="button">,</button>
+            <button class="equals" data-action="equals" type="button">=</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section certificate" id="mbo-verklaring">
+        <div class="certificate-copy">
+          <div class="section-label">04 — Behaalde onderdelen</div>
+          <h2>Mijn ICT-examens zijn behaald.</h2>
+          <p>Op 22 juni 2026 ontving ik van Vonk een mbo-verklaring. Hierop staat dat ik onderdelen van de mbo-4-opleiding Software Developer, met crebo-code 25604, heb behaald.</p>
+          <p>Met een stage wil ik mijn kennis weer actief toepassen, meer praktijkervaring opdoen en mezelf verder ontwikkelen als developer.</p>
+        </div>
+        <figure class="certificate-image">
+          <img src="images/mboverklaringob.png" alt="Mbo-verklaring van Fayzall voor behaalde onderdelen van Software Developer">
+          <figcaption>Mbo-verklaring · Vonk · 22 juni 2026</figcaption>
+        </figure>
+      </section>
+
+      <section class="section experience" id="ervaring">
+        <div class="section-label">05 — Achtergrond</div>
+        <div class="timeline">
+          <article><div class="timeline-icon">ICT</div><div><p class="meta">Opleiding · examens behaald</p><h3>Mbo 4 Software Developer</h3><p>Vonk, Schagen</p></div></article>
+          <article><div class="timeline-icon">WERK</div><div><p class="meta">Werkervaring</p><h3>Customer Advisor / Sales</h3><p>Essent via Adecco — klantcontact, advies en werken met doelen.</p></div></article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <p class="eyebrow contact-eyebrow"><span></span> Kennismaken?</p>
+        <h2>Ik vertel graag meer over wat ik kan en wat ik wil leren.</h2>
+        <p>Stuur gerust een e-mail als u meer wilt weten over mijn ervaring en motivatie.</p>
+        <a class="button button-light" href="mailto:faysalzinhagel@gmail.com">Stuur mij een e-mail ↗</a>
+      </section>
+    </main>
+
+    <footer><p>© <span id="jaar">2026</span> Fayzall Zinhagel</p><p>Gebouwd met HTML, CSS en JavaScript.</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
